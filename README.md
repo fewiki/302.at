@@ -3,6 +3,9 @@
 
 ☕ [Homepage](https://302.at/)
 
+![](https://dn-getlink.qbox.me/dp8yvtgjfyv43fob6gvi.png)
+
+
 This's a simple URL shortener, the backend is based on NodeJS and [LeanCloud](https://leancloud.cn/)
 
 How to run
