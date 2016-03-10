@@ -1,7 +1,7 @@
 302@ - A Cool URL Shortener
 ---
 
-☕ [Homepage](https://302.at/)
+:coffee: [Homepage](https://302.at/)
 
 ![](https://dn-getlink.qbox.me/dp8yvtgjfyv43fob6gvi.png)
 
