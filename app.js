@@ -26,6 +26,15 @@ app.post('/', function(req, res) {
 	});
 });
 
+app.get('/ip', function(req, res){
+       var ip = req.headers['x-forwarded-for'] ||
+           req.connection.remoteAddress ||
+           req.socket.remoteAddress ||
+           req.connection.socket.remoteAddress;
+        res.send(ip);
+});
+
+
 app.get('/:shortId', function(req, res) {
 	var shortId = req.params.shortId;
 	utils.get(shortId, function(result) {
