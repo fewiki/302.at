@@ -13,6 +13,16 @@ app.get('/404', function(req, res) {
 	res.send('<p>/* 404 */</p>');
 });
 
+//设置跨域访问
+app.all('*', function(req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "accept, content-type");
+    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+    // res.header("X-Powered-By",' 3.2.1')
+    res.header("Content-Type", "application/json;charset=utf-8");
+    next();
+});
+
 app.post('/', function(req, res) {
 	var longUrl = req.body.longUrl;
 	utils.set(longUrl, function(result) {
